@@ -12,14 +12,14 @@ namespace adiary_service
 		private Constants constants = new Constants();
 		private Process proc;
 		private Boolean stopping = false;
-		private string debug_file;
+		private string debug_file = "";
 
 		public adiary()
 		{
 			InitializeComponent();
 
 			ServiceName = constants.service_name;
-			//debug_file  = "d:\\debug_log.txt";
+		//	debug_file  = "d:\\debug_log.txt";
 		}
 
 		public Boolean CheckRunasService()
