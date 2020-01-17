@@ -38,6 +38,7 @@ namespace adiary_service
 			ProcessStartInfo psi = new ProcessStartInfo();
 			psi.FileName  = constants.target_exe;
 			psi.Arguments = constants.arguments;
+			psi.WorkingDirectory = constants.path;
 			psi.UseShellExecute = false;
 			psi.CreateNoWindow  = true;
 
@@ -47,6 +48,7 @@ namespace adiary_service
 			}
 
 			debug("execute file  : " + psi.FileName);
+			debug("execute path  : " + psi.WorkingDirectory);
 			debug("execute arg   : " + psi.Arguments);
 
 			proc = new Process();

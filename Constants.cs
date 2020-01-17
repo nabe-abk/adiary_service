@@ -22,7 +22,7 @@ namespace adiary_service
 			target_exe   = Regex.Replace(this_exe,   "_service\\.exe$", ".exe",       RegexOptions.IgnoreCase);
 			service_name = Regex.Replace(target_exe, ".*\\\\([^\\\\]+)\\.exe$", "$1", RegexOptions.IgnoreCase);
 			service_name = Regex.Replace(service_name, "\\W", "");
-			arguments    = Regex.Replace(Environment.CommandLine, "^(\"[^\"]*\"|[^ ]*) +", "");
+			arguments    = Regex.Replace(Environment.CommandLine, "^(\"[^\"]*\"|[^ ]*) *", "");
 			arguments    = Regex.Replace(arguments, "\"", "\\\"");
 
 			if (this_exe == target_exe) 	target_exe = System.IO.Path.Combine(path, "\adiary.exe");
