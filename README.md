@@ -1,5 +1,6 @@
 # Windows Service Wrapper for Universal EXE file
 
+  - .NET 2.0 application
   - Copyright: (C)2020 nabe@abk
   - Lisence: GPLv3 or later
 
