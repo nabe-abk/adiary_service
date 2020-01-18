@@ -13,7 +13,7 @@ you rename this file to **"TARGET_service.exe"** and
 copy it to the same folder as **"TARGET.EXE"**.
 
 When you run **"TARGET_service.exe"**, 
-it regist to the Windows services and auto start the service.
+it regist to Windows services and auto start the service.
 
 If you run **"TARGET_service.exe"** again,
 stop this service and delete it from Windows services.
