@@ -21,10 +21,10 @@ stop this service and delete it from Windows services.
 # Options
 
 This program not have option.
-All command line opition for **"TARGET.EXE"** when registering a Windows services.
+All command line opition for **"TARGET.EXE"** when registering to Windows services.
 
 If you regist to service **"TARGET.EXE"** with "-x" option,
-run **"TARGET_service.exe"** with "-x" option when registering a Windows services.
+run **"TARGET_service.exe"** with "-x" option when registering to Windows services.
 
 # Additional
 
